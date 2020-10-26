@@ -1,0 +1,19 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.time {
+  font-size: calc(100vh * 0.4);
+  margin: 0 auto;
+}
+
+.date {
+  margin: 0 auto;
+}
