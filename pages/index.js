@@ -4,8 +4,9 @@ import styles from './Home.module.css';
 
 export default function Home() {
 
-  const [currentTime, setCurrentTime] = useState("");
-  const [currentDate, setCurrentDate] = useState("");
+  const now = new Date();
+  const [currentTime, setCurrentTime] = useState(format(now, "HH:mm"));
+  const [currentDate, setCurrentDate] = useState(format(now, "EE dd.MM.yyyy"));
 
   useEffect(() => {
     const interval = setInterval(() => {
