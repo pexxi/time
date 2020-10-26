@@ -13,7 +13,7 @@ export default function Home() {
       const now = new Date();
       setCurrentTime(format(now, "HH:mm"));
       setCurrentDate(format(now, "EE dd.MM.yyyy"));
-    }, 60000);
+    }, 1000);
     return () => {
       clearInterval(interval);
     }
